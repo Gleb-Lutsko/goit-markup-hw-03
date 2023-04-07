@@ -6,12 +6,29 @@
 --accent-color:#4D5AE5;
 --footer-text-color:#F4F4FD;
 }
+
+/* СБРОС СТИЛЕЙ */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* /СБРОС СТИЛЕЙ */
 /* ============BASIC STYLE============ */
 body{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
     color: var(--seconfary-text-color);
     background-color: var(--white-color);
+}
+.container{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 15px;
 }
 .link {
     text-decoration: none;
@@ -44,6 +61,7 @@ body{
 .btn {
     cursor: pointer;
     font-family: inherit;
+    border: none;
 }
 /* 
 =
@@ -51,6 +69,10 @@ body{
 = 
 */
 /* ============HEADER============ */
+.menu{
+    display: flex;
+
+}
 .logo {
     font-family: 'Raleway', sans-serif;
         font-weight: 800;
@@ -59,22 +81,35 @@ body{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--accent-color);
+        display: block;
+        padding: 26px 0;
+        margin-right: 76px;
 }
 
-
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
 .contacts-link{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         color: var(--seconfary-text-color);
         font-style: normal;
+        display: block;
+        padding: 26px 0;
 }
 
 .contacts-link:hover,
 .contacts-link:focus{
     color: var(--hover-color);
 }
-
+.nav-list{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
 .nav-link:hover,
 .nav-link:focus{
     color: var(--hover-color);
@@ -87,16 +122,27 @@ body{
         font-size: 16px;
         line-height: 1.5;
         color: var(--main-text-color);
+        display: block;
+        padding: 26px 0;
 }
 .contacts{
     font-style: normal;
+}
+.contacts-list{
+    display: flex;
+}
+.mail{
+    margin-right: 40px;
 }
 /* ============/HEADER============ */
 /* ============HERO============ */
 .hero-section {
     background-color: var(--main-text-color);
 }
- 
+ .hero-container{
+    text-align: center;
+    padding: 188px 0;
+ }
 
 .hero-title {
         font-weight: 700;
@@ -106,6 +152,11 @@ body{
         text-align: center;
         letter-spacing: inherit;
         letter-spacing: 0.02em;
+        width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+
 }
 
 .hero-btn {
@@ -117,6 +168,9 @@ body{
         color:var(--white-color);
         background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 16px 32px;
+
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -124,12 +178,20 @@ body{
 }
 /* ============/HERO============ */
 /* ============ABOUT============ */
+.about-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
 .about-title{
     text-align: center;
     letter-spacing: 0.02em;
 }
-.projects-item{
-    letter-spacing: 0.02em;
+.about-subtitle{
+    margin-bottom: 8px;
+}
+.about-item{
+    width: 264px;
 }
 
 /* ============/ABOUT============ */
@@ -138,24 +200,41 @@ body{
 .projects-title{
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 72px;
 }
 
-
+.projects-list{
+    display: flex;
+    gap: 24px;
+}
 /* ============/PROJECTS============ */
 /* ============TEAM============ */
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
 .team-section {
     background-color: var(--footer-text-color);
+}
+.team-title{
+    margin-bottom: 72px;
 }
 .team-title,
 .team-subtitle{
     text-align: center;
     letter-spacing: 0.02em;
 }
-
+.team-subtitle{
+    margin-bottom: 8px;
+}
 .team-item{
     background-color: var(--white-color);
+    width: 264px;
 }
-
+.team-subtitle-container{
+    margin: 32px 60px;
+    text-align: center;
+}
 /* ============/TEAM============ */
 /* ============FOOTER============ */
 
@@ -166,8 +245,16 @@ body{
 .footer{
     background-color: var(--main-text-color);
 }
+.footer-container{
+    padding: 0;
+}
 .footer-text{
     color: var(--footer-text-color);
+    width: 264px;
+}
+.footer .logo{
+    padding:0 0 16px 0;
+    width: 115px;
 }
 /* 
 =
