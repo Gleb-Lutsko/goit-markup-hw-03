@@ -24,8 +24,12 @@ body{
     color: var(--seconfary-text-color);
     background-color: var(--white-color);
 }
+img{
+    display: block;
+}
 .page-header{
     border-bottom: 1px solid #E7E9FC;
+
 }
 .container{
     width: 1158px;
@@ -74,6 +78,7 @@ body{
 /* ============HEADER============ */
 .menu{
     display: flex;
+    align-items: center;
 
 }
 .logo {
@@ -85,14 +90,15 @@ body{
         text-transform: uppercase;
         color: var(--accent-color);
         display: block;
-        padding: 26px 0;
+        padding: 24px 0;
         margin-right: 76px;
 }
 
 .header-container{
     display: flex;
     justify-content: space-between;
-    padding: 0;
+        align-items: center;
+        padding: 0 15px;
 }
 .contacts-link{
         font-weight: 400;
@@ -101,7 +107,7 @@ body{
         color: var(--seconfary-text-color);
         font-style: normal;
         display: block;
-        padding: 26px 0;
+        padding: 24px 0;
 }
 
 .contacts-link:hover,
@@ -126,25 +132,25 @@ body{
         line-height: 1.5;
         color: var(--main-text-color);
         display: block;
-        padding: 26px 0;
+        padding: 24px 0;
 }
 .contacts{
     font-style: normal;
 }
 .contacts-list{
     display: flex;
-}
-.mail{
-    margin-right: 40px;
+    gap: 40px;
 }
 /* ============/HEADER============ */
 /* ============HERO============ */
 .hero-section {
     background-color: var(--main-text-color);
+        padding: 188px 0;
 }
  .hero-container{
     text-align: center;
-    padding: 188px 0;
+    padding: 0;
+
  }
 
 .hero-title {
@@ -155,7 +161,7 @@ body{
         text-align: center;
         letter-spacing: inherit;
         letter-spacing: 0.02em;
-        width: 496px;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 48px;
@@ -163,6 +169,10 @@ body{
 }
 
 .hero-btn {
+    display: block;
+    min-width: 169px;
+    margin-left: auto;
+    margin-right: auto;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -181,6 +191,12 @@ body{
 }
 /* ============/HERO============ */
 /* ============ABOUT============ */
+.about-section{
+    padding: 120px 0;
+}
+.about-container{
+    padding: 0 15px;
+}
 .about-list{
     display: flex;
     justify-content: space-between;
@@ -199,7 +215,12 @@ body{
 
 /* ============/ABOUT============ */
 /* ============PROJECTS============ */
-
+.projects-section{
+    padding-bottom: 120px;
+}
+.projects-container{
+    padding: 0 15px;
+}
 .projects-title{
     text-align: center;
     letter-spacing: 0.02em;
@@ -215,9 +236,14 @@ body{
 .team-list{
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 .team-section {
     background-color: var(--footer-text-color);
+    padding: 120px 0;
+}
+.team-container{
+    padding: 0 15px;
 }
 .team-title{
     margin-bottom: 72px;
@@ -233,10 +259,12 @@ body{
 .team-item{
     background-color: var(--white-color);
     width: 264px;
+    border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle-container{
-    margin: 32px 60px;
+    padding: 32px 16px;
     text-align: center;
+
 }
 /* ============/TEAM============ */
 /* ============FOOTER============ */
@@ -247,9 +275,10 @@ body{
 /* ============/FOOTER============ */
 .footer{
     background-color: var(--main-text-color);
+    padding: 100px 0;
 }
 .footer-container{
-    padding: 100px 15px 100px 15px;
+    padding: 0 15px;
 }
 .footer-text{
     color: var(--footer-text-color);
@@ -258,6 +287,7 @@ body{
 .footer .logo{
     margin: 0 0 16px 0;
     width: 115px;
+    display: inline-block;
 }
 /* 
 =
@@ -274,11 +304,13 @@ body{
 = 
 */
 /* FILTER BTN */
+.portfolio-section{
+    padding: 96px 0 120px;
+}
 .filter-list{
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 96px;
     margin-bottom: 72px;
     padding: 0;
 }
@@ -302,11 +334,14 @@ body{
 }
 /* /FILTER BTN */
 /* PROJECTS */
+.portfolio-container{
+    padding: 0 15px;
+}
 .portfolio-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 15px 120px 15px;
+    padding: 0 15px 0 15px;
     row-gap: 48px;
     
 }
