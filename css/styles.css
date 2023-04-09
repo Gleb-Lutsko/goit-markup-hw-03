@@ -345,7 +345,6 @@ img{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 15px 0 15px;
     row-gap: 48px;
     column-gap: 24px;
     
