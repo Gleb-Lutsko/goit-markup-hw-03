@@ -288,7 +288,7 @@ img{
 }
 .footer .logo{
     margin: 0 0 16px 0;
-    width: 115px;
+    padding: 0;
     display: inline-block;
 }
 /* 
